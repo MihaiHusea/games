@@ -76,36 +76,28 @@ class Game:
         self.play_again()
 
     def check_winner(self):
-        if (btn1['text'] == btn2['text'] == btn3['text'] == 'X') or (
-                btn1['text'] == btn2['text'] == btn3['text'] == 'O'):
+        if btn1['text'] == btn2['text'] == btn3['text'] != '':
             self.set_winner_line(btn1, btn2, btn3)
 
-        elif (btn4['text'] == btn5['text'] == btn6['text'] == 'X') or (
-                btn4['text'] == btn5['text'] == btn6['text'] == 'O'):
+        elif btn4['text'] == btn5['text'] == btn6['text'] != '':
             self.set_winner_line(btn4, btn5, btn6)
 
-        elif (btn7['text'] == btn8['text'] == btn9['text'] == 'X') or (
-                btn7['text'] == btn8['text'] == btn9['text'] == 'O'):
+        elif btn7['text'] == btn8['text'] == btn9['text'] != '':
             self.set_winner_line(btn7, btn8, btn9)
 
-        elif (btn1['text'] == btn4['text'] == btn7['text'] == 'X') or (
-                btn1['text'] == btn4['text'] == btn7['text'] == 'O'):
+        elif btn1['text'] == btn4['text'] == btn7['text'] != '':
             self.set_winner_line(btn1, btn4, btn7)
 
-        elif (btn2['text'] == btn5['text'] == btn8['text'] == 'X') or (
-                btn2['text'] == btn5['text'] == btn8['text'] == 'O'):
+        elif btn2['text'] == btn5['text'] == btn8['text'] != '':
             self.set_winner_line(btn2, btn5, btn8)
 
-        elif (btn3['text'] == btn6['text'] == btn9['text'] == 'X') or (
-                btn3['text'] == btn6['text'] == btn9['text'] == 'O'):
+        elif btn3['text'] == btn6['text'] == btn9['text'] != '':
             self.set_winner_line(btn3, btn6, btn9)
 
-        elif (btn1['text'] == btn5['text'] == btn9['text'] == 'X') or (
-                btn1['text'] == btn5['text'] == btn9['text'] == 'O'):
+        elif btn1['text'] == btn5['text'] == btn9['text'] != '':
             self.set_winner_line(btn1, btn5, btn9)
 
-        elif (btn3['text'] == btn5['text'] == btn7['text'] == 'X') or (
-                btn3['text'] == btn5['text'] == btn7['text'] == 'O'):
+        elif btn3['text'] == btn5['text'] == btn7['text'] != '':
             self.set_winner_line(btn3, btn5, btn7)
 
         elif clicked_buttons == 9:
